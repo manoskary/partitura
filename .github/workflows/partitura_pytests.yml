@@ -25,7 +25,6 @@ jobs:
     - name: Run tests with pytest
       run: pytest 
   
-  
   build-windows:
     runs-on: windows-latest
     strategy:
