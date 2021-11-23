@@ -23,7 +23,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run Tests    
-      run: python -m unittest discover test 'test*.py'
+      run: python -m unittest discover ./tests/ 'test*.py'
   
   build-windows:
     runs-on: windows-latest
@@ -41,5 +41,5 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run Tests    
-      run: python -m unittest discover test 'test*.py'
+      run: python -m unittest discover ./tests/ 'test*.py'
 
